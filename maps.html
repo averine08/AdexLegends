@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adex Legends</title>
+    <link rel="shortcut icon" href="./assets/Logo-Gun.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style_maps.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-left">
+                <a class="nav-logo" href="./home.html"><img src="./assets/Logo-Gun-Navbar.svg" alt=""></a>
+                <div class="nav-menu">
+                    <a href="./home.html">HOME</a>
+                    <a href="#header">ABOUT US</a>
+                    <a href="./legends.html">LEGENDS</a>
+                    <a class="nav-selected" href="#banner">MAPS</a>
+                </div>
+            </div>
+            <div class="nav-sign">
+                <a href="./regist.html">SIGN UP</a>
+            </div>
+        </div>
+    </nav>
+    <section id="banner">
+        <div class="banner-container">
+            <div class="banner-container">
+                <h1>DISCOVER THE MAPS !</h1>
+                <p>Do you know that each maps has it’s strategy?</p>
+                <p>Let’s learn more about ADEX maps to choose the best strategy</p>
+                <div class="banner-button">
+                    <a href="#arena">ARENAS MAPS</a>
+                    <a href="#battle-royale">BATTLE ROYALE MAPS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="arena">
+        <div class="map-container">
+            <div class="map-header">
+                <div class="map-title">
+                    <img class="left-line" src="./assets/maps-line.svg" alt="">
+                    <h1>ARENAS</h1>
+                    <img src="./assets/maps-line.svg" alt="">
+                </div>
+                <p>Sharpen your skills where there's nowhere to hide. Unlike the grand scale of the Apex Games, Arenas maps are specially designed for frenetic 3v3 action.</p>
+                <div class="map-name">
+                   <input id="first-btn" class="arena-btn" type="button" value="Encore" onclick="changeMap(1)">
+                   <input class="arena-btn" type="button" value="Drop Off" onclick="changeMap(2)">
+                   <input class="arena-btn" type="button" value="Overflow" onclick="changeMap(3)">
+                </div>
+            </div>
+            <div class="map-img">
+                <img id="arena-map-img" src="./assets/Maps/Encore Map.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="battle-royale">
+        <div class="map-container">
+            <div class="map-header">
+                <div class="map-title">
+                    <img class="left-line" src="./assets/maps-line.svg" alt="">
+                    <h1>BATTLE ROYALE</h1>
+                    <img src="./assets/maps-line.svg" alt="">
+                </div>
+                <p>Located on planets across the Outlands, these massive landscapes host the massive Adex Games.</p>
+                <div class="map-name">
+                   <input id="first-btn" class="battle-btn" type="button" value="World's Edge" onclick="changeMap(4)">
+                   <input class="battle-btn" type="button" value="Olympus" onclick="changeMap(5)">
+                   <input class="battle-btn" type="button" value="Storm Point" onclick="changeMap(6)">
+                </div>
+            </div>
+            <div class="map-img">
+                <img id="battle-map-img" src="./assets/Maps/World_s Edge.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="./home.html">
+                    <img src="./assets/Logo-Gun-Footer.svg" alt="">
+                </a>
+            </div>
+            <div class="footer-mid">
+                <h1>Find Us on:</h1>
+                <div class="medsos">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="./assets/facebook.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="./assets/instagram.svg" alt="">
+                    </a>
+                    <a href="https://twitter.com/?lang=en" target="_blank">
+                        <img src="./assets/twitter.svg" alt="">
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="./assets/youtube.svg" alt="">
+                    </a>
+                </div>
+                <p>Copyright ADEX LEGENDS 2022, All rights reserved</p>
+            </div>
+            <div class="footer-right">
+                <a href="./home.html">HOME</a>
+                <a href="#header">ABOUT</a>
+                <a href="./legends.html">LEGENDS</a>
+                <a href="#banner">MAPS</a>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script_maps.js"></script>
+</html>

@@ -1,0 +1,348 @@
+*:root{
+    --black: #281D21;
+    --red: #CD2F2F;
+    --white: #ECE8E1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.regist-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.regist-img{
+    background-image: url(./assets/regist-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.back-home{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 40px 60px;
+}
+
+.back-home img{
+    transform: rotate(180deg);
+    width: 100px;
+    z-index: 1;
+    margin-left: 10px;
+}
+
+.back-home a{
+    text-decoration: none;
+    font-family: "Exo";
+    font-size: 24px;
+    color: var(--white);
+    z-index: 1;
+}
+
+.back-home:hover .trapesium{
+    opacity: 1;
+    transition: 0.5s ease-out;
+    
+}
+
+.trapesium{
+    border-bottom: 50px solid var(--red);
+    border-left: 25px solid transparent;
+    width: 300px;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+}
+
+/* Form Registration */
+
+.regist-form{
+    background-color: var(--white);
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    margin-top: 12px;
+}
+
+.label-input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 430px;
+}
+
+.label-input label{
+    font-family: "Bebas Neue";
+    font-size: 30px;
+    color: var(--black);
+}
+
+.label-input-gender{
+    display: flex;
+    align-items: center;
+}
+
+.label-input-gender input{
+    margin-right: 10px;
+}
+
+.label-input-gender label{
+    font-size: 20px;
+    font-family: "Exo";
+    margin-right: 24px;
+}
+
+.label-input input, .label-input select, #terms{
+    border: none;
+    padding: 8px 14px;
+    font-family: "Exo";
+    font-size: 20px;
+    color: var(--black);
+    height: 40px;
+    background-color: white;
+}
+
+.label-checkbox{
+    display: flex;
+
+}
+
+#terms{
+    width: 25px;
+    margin-right: 12px;
+}
+
+.checkbox{
+    font-size: 20px;
+    font-family: "Exo";
+    color: var(--black);
+}
+
+.checkbox span{
+    color: var(--red);
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    color: var(--white);
+    padding: 17px 107px;
+    background-color: var(--red);
+    border: solid;
+    font-family: "Exo";
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 17px 0px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--white);
+    color: var(--red);
+    border: solid;
+}
+
+.error-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#error{
+    font-family: "Exo";
+    font-size: 16px;
+    color: var(--red);
+
+}
+
+/* Footer */
+
+#footer{
+    background-color: var(--black);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 104px;
+    align-items: center;
+}
+
+.footer-mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.footer-mid h1{
+    font-family: "Exo";
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 20px
+}
+
+.medsos a{
+    width: 50px;
+    height: 50px;
+}
+
+.medsos>:not(:first-child){
+    margin-left: 18px;
+}
+
+.footer-mid p{
+    font-family: "Exo";
+    font-size: 16px;
+    color: var(--white);
+    margin-top: 90px;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right a{
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Bebas Neue";
+    color: var(--white);
+    text-align: end;
+    margin-bottom: 15px
+}
+
+.footer-right a:hover{
+    color: var(--red);
+}
+
+@media screen and (max-width: 768px) {
+    .back-home{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin: 40px 20px;
+    }
+    
+    .back-home a{
+        text-decoration: none;
+        font-family: "Exo";
+        font-size: 20px;
+        color: var(--white);
+        z-index: 1;
+    }
+    
+    .trapesium{
+        border-bottom: 50px solid var(--red);
+        border-left: 25px solid transparent;
+        width: 280px;
+    }
+
+    /* Register Form */
+
+    .regist-form{
+        padding: 30px;
+    }
+    
+    .label-input{
+        width: 340px;
+    }
+    
+    .label-input label{
+        font-size: 24px;
+    }
+    
+    .label-input-gender input{
+        margin-right: 4px;
+    }
+    
+    .label-input-gender label{
+        font-size: 20px;
+        margin-right: 0px;
+    }
+    
+    .label-input-gender>:not(:last-child, input){
+        margin-right: 20px;
+        
+    }
+
+    .label-input input, .label-input select, #terms{
+        padding: 4px 10px;
+        font-size: 18px;
+        height: 34px;
+    }
+    
+    .checkbox{
+        font-size: 18px;
+    }
+    
+    button{
+        padding: 14px 90px;
+    }
+    
+    /* Footer */
+
+    .footer-right{
+        display: none;
+    }
+    
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 0px 30px 0px;
+    }
+    
+    .footer-mid{
+        margin: 40px 0px 0px 0px;
+        
+    }
+    
+    .medsos a{
+        width: 50px;
+        height: 50px;
+    }
+    
+    
+    .footer-mid p{
+        margin-top: 40px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 425px) {
+
+    .regist-img{
+        display: none;
+    }
+
+    /* Register Form */
+    
+    .label-input{
+        width: 360px;
+    }
+    
+    /* Footer */
+    
+    .footer-mid p{
+        margin-top: 40px;
+        font-size: 14px;
+    }
+
+}

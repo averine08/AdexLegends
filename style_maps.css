@@ -1,0 +1,459 @@
+*:root{
+    --black: #281D21;
+    --red: #CD2F2F;
+    --white: #ECE8E1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    padding-top: 81px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 66px 8px 104px;
+    background-color: var(--black);
+}
+
+.nav-logo{
+    margin-right: 50px;
+}
+
+.nav-menu a , .nav-sign a{
+    text-decoration: none;
+    font-family: "Bebas Neue";
+    color: white;
+    font-size: 24px;
+    
+}
+
+.nav-menu a:not(.nav-selected) , .nav-sign{
+    margin-bottom: 5px;
+}
+
+.nav-logo img{
+    width: 115px;
+    height: 60px;
+}
+
+.nav-left{
+    display: flex;
+}
+
+.nav-menu, .nav-sign{
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu >*:not(:first-child){
+    margin-left: 40px;
+}
+
+.nav-selected{
+    border: solid;
+    border-width: 0px 0px 5px;
+    padding: 4px 0px;
+}
+
+.nav-menu a:hover , .nav-sign a:hover{
+    color: var(--red);
+}
+
+/* Banner */
+
+#banner{
+    background-image: url(./assets/maps-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner-container h1{
+    color: var(--white);
+    font-family: "Bebas Neue";
+    font-size: 100px;
+    font-weight: normal;
+}
+
+.banner-container p{
+    color: var(--white);
+    font-family: "Exo";
+    font-size: 24px;
+}
+
+.banner-button{
+    margin-top: 50px;
+}
+
+.banner-button a{
+    text-decoration: none;
+    color: var(--white);
+    border: solid 3px;
+    font-size: 24px;
+    font-family: "Exo";
+    padding: 15px 25px;
+}
+
+.banner-button a:hover{
+    color: var(--red);
+    border: solid;
+}
+
+.banner-button>:not(:first-child){
+    margin-left: 30px;
+}
+
+/* Arenas & Battle Royale*/
+
+#arena, #battle-royale{
+    background-color: var(--white);
+}
+
+.map-container{
+    padding-top: 112px;
+}
+
+.map-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-title img{
+    width: 336px;
+    height: 44px;
+}
+
+.left-line{
+    transform: rotate(180deg);
+}
+
+.map-title h1{
+    font-size: 90px;
+    font-family: "Bebas Neue";
+    font-weight: normal;
+    margin: 0px 24px;
+}
+
+.map-header p{
+    font-family: "Exo";
+    font-size: 20px;
+    text-align: center;
+    color: var(--black);
+    margin: 0px 450px 25px;
+}
+
+.map-name{
+    text-align: center;
+}
+
+.arena-btn, .battle-btn{
+    cursor: pointer;
+    font-family: "Exo";
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--black);
+    border: none;
+    background-color: var(--white);
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+.arena-btn-clicked, .battle-btn-clicked, #first-btn{
+    color: var(--red);
+}
+
+.map-name>:not(:first-child){
+    margin-left: 16px;
+}
+
+.map-name input:hover{
+    color: var(--red);
+}
+
+.map-img{
+    display: flex;
+    justify-content: center;
+}
+
+.map-img img{
+    width: 908px;
+    height: 558px;
+}
+
+#battle-map-img{
+    margin-bottom: 127px;
+}
+
+/* Footer */
+
+#footer{
+    background-color: var(--black);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 104px;
+    align-items: center;
+}
+
+.footer-mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.footer-mid h1{
+    font-family: "Exo";
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 20px
+}
+
+.medsos a{
+    width: 50px;
+    height: 50px;
+}
+
+.medsos>:not(:first-child){
+    margin-left: 18px;
+}
+
+.footer-mid p{
+    font-family: "Exo";
+    font-size: 16px;
+    color: var(--white);
+    margin-top: 90px;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right a{
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Bebas Neue";
+    color: var(--white);
+    text-align: end;
+    margin-bottom: 15px
+}
+
+.footer-right a:hover{
+    color: var(--red);
+}
+
+/* Tablet */
+
+@media screen and (max-width: 768px) {
+    
+    .nav-container{
+        padding: 12px 40px 8px 40px;
+    }
+
+    .nav-logo{
+        margin-right: 30px;
+    }
+
+    .nav-menu >*:not(:first-child){
+        margin-left: 30px;
+    }
+
+    /* Banner */
+    
+    .banner-container h1{
+        font-size: 80px;
+    }
+    
+    .banner-container p{
+        font-size: 20px;
+    }
+    
+    .banner-button a{
+        font-size: 20px;
+    }
+
+    /* Arena & Battle Royale */
+     
+    .map-title img{
+        width: 180px;
+        height: 44px;
+    }
+      
+    .map-title h1{
+        font-size: 70px;
+    }
+    
+    .map-header p{
+        margin: 0px 60px 25px;
+    }
+    
+    .map-img{
+        padding: 0px 30px;
+    }
+    
+    .map-img img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* Footer */
+
+    .footer-right{
+        display: none;
+    }
+    
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 0px 30px 0px;
+    }
+    
+    .footer-mid{
+        margin: 40px 0px 0px 0px;
+        
+    }
+    
+    .medsos a{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .footer-mid p{
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+
+    .nav-container{
+        padding: 12px 12px 8px 12px;
+    }
+
+    .nav-logo{
+        margin-right: 15px;
+        
+    }
+
+    .nav-logo img{
+        width: 100px;
+    }
+
+    .nav-menu a , .nav-sign a{
+        font-size: 20px;
+        
+    }
+
+    .nav-menu >*:not(:first-child){
+        margin-left: 15px;
+    }
+
+    /* Banner */
+
+    .banner-container h1{
+        font-size: 60px;
+    }
+    
+    .banner-container p{
+        font-size: 16px;
+        text-align: center;
+        padding: 0px 10px;
+    }
+    
+    .banner-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .banner-button a{
+        font-size: 16px;
+       
+    }
+    
+    .banner-button>:not(:first-child){
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    /* Arena & Battle Royale */
+    
+    .map-container{
+        padding-top: 80px;
+    }
+    
+    .map-title img{
+        width: 120px;
+        height: 44px;
+    }
+    
+    .map-title h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    .map-header p{
+        margin: 0px 30px 25px;
+    }
+    
+    .arena-btn, .battle-btn{
+        font-size: 20px;
+    }
+    
+    .map-name>:not(:first-child){
+        margin-left: 14px;
+    }
+
+    .map-img{
+        padding: 0px 10px;
+    }
+
+    /* Footer */
+    
+    .footer-mid p{
+        margin-top: 40px;
+        font-size: 14px;
+    }
+
+
+}

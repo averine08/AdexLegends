@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adex Legends</title>
+    <link rel="shortcut icon" href="./assets/Logo-Gun.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style_regist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="regist">
+        <div class="regist-container">
+            <div class="regist-img">
+                <div class="back-home">
+                    <div class="trapesium"></div>
+                    <a href="./home.html"><img src="./assets/arrow_big.svg" alt=""></a>
+                    <a href="./home.html">BACK TO HOME</a>
+                </div>
+            </div>
+            <div class="regist-form">
+                <img src="./assets/Logo-Gun-Regist.svg" alt="">
+                <form action="" id="form" onsubmit="return validasi()">
+                    <div class="label-input">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" placeholder="Enter email address">
+                    </div>
+                    <div class="label-input">
+                        <label for="fullname">FULL NAME</label>
+                        <input type="text" id="fullname" placeholder="Enter Full Name">
+                    </div>
+                    <div class="label-input">
+                        <label for="username">USERNAME</label>
+                        <input type="text" id="username" placeholder="Enter username">
+                    </div>
+                    <div class="label-input">
+                        <label for="country">COUNTRY</label>
+                        <select name="" id="country">
+                            <option value="">-- Select a Country</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Japan">Japan</option>
+                            <option value="America">America</option>
+                            <option value="Europe">Europe</option>
+                            <option value="China">China</option>
+                            <option value="Africa">Africa</option>
+                            <option value="Australia">Australia</option>
+                        </select>
+                    </div>
+                    <div class="label-input">
+                        <label for="">GENDER</label>
+                        <div class="label-input-gender">
+                            <input type="radio" id="male" value="Male" name="gender">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" value="Female" name="gender">
+                            <label for="female">Female</label>
+                            <input type="radio" id="none" value="None" name="gender">
+                            <label for="none">Better not say</label>
+                        </div> 
+                    </div>
+                    <div class="label-input">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" placeholder="Enter password">
+                    </div>
+                    <div class="label-checkbox">
+                        <input type="checkbox" id="terms">
+                        <label class="checkbox" for="">I have read and agree with <span>Terms and Condition</span></label>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit">REGISTER</button>
+                    </div>
+                    <div class="error-container">
+                        <label id="error" for=""></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="./home.html">
+                    <img src="./assets/Logo-Gun-Footer.svg" alt="">
+                </a>
+            </div>
+            <div class="footer-mid">
+                <h1>Find Us on:</h1>
+                <div class="medsos">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="./assets/facebook.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="./assets/instagram.svg" alt="">
+                    </a>
+                    <a href="https://twitter.com/?lang=en" target="_blank">
+                        <img src="./assets/twitter.svg" alt="">
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="./assets/youtube.svg" alt="">
+                    </a>
+                </div>
+                <p>Copyright ADEX LEGENDS 2022, All rights reserved</p>
+            </div>
+            <div class="footer-right">
+                <a href="./home.html">HOME</a>
+                <a href="./about.html">ABOUT</a>
+                <a href="./legends.html">LEGENDS</a>
+                <a href="./maps.html">MAPS</a>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script_regist.js"></script>
+</html>

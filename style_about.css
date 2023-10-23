@@ -1,0 +1,567 @@
+*:root{
+    --black: #281D21;
+    --red: #CD2F2F;
+    --white: #ECE8E1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    padding-top: 83px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 66px 8px 104px;
+    background-color: var(--black);
+}
+
+.nav-logo{
+    margin-right: 50px;
+}
+
+.nav-menu a , .nav-sign a{
+    text-decoration: none;
+    font-family: "Bebas Neue";
+    color: white;
+    font-size: 24px;
+    
+}
+
+.nav-menu a:not(.nav-selected) , .nav-sign{
+    margin-bottom: 5px;
+}
+
+.nav-logo img{
+    width: 115px;
+    height: 60px;
+}
+
+.nav-left{
+    display: flex;
+}
+
+.nav-menu, .nav-sign{
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu >*:not(:first-child){
+    margin-left: 40px;
+}
+
+.nav-selected{
+    border: solid;
+    border-width: 0px 0px 5px;
+    padding: 4px 0px;
+}
+
+.nav-menu a:hover , .nav-sign a:hover{
+    color: var(--red);
+}
+
+/* Header Banner */
+
+#header{
+    background-image: url(./assets/about-header-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.header-container p{
+    font-family: "Exo";
+    font-size: 20px;
+    color: var(--white);
+    margin: 0px 380px;
+    text-align: center;
+}
+
+.header-logo{
+    width: 350px;
+    height: 152px;
+    margin-left: 40px;
+    margin-top: 70px;
+}
+
+/* Overview */
+
+#overview{
+    background-color: var(--white);
+}
+
+.overview-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview-title h1{
+    font-family: "Bebas Neue";
+    font-size: 100px;
+    color: var(--black);
+}
+
+.trapesium, .trapesium-left{
+    border-bottom: 115px solid var(--red);
+    border-left: 120px solid transparent;
+    width: 500px;
+    height: 110px;
+}
+
+.trapesium-left{
+    transform: rotate(180deg);
+}
+
+.overview-card{
+    display: flex;
+    justify-content: space-between;
+    padding: 78px 175px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: var(--black);
+    width: 305px;
+    height: 464px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.card img{
+    width: 305px;
+    height: 170px;
+}
+
+.card-content{
+    padding: 16px 28px 0px 40px;
+    
+}
+
+.card-content h1{
+    color: var(--white);
+    font-family: "Exo";
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 17px;
+}
+
+.card-content p{
+    color: var(--white);
+    font-family: "Exo";
+    font-size: 16px;
+}
+
+.triagle-container{
+    display: flex;
+    height: 464px;
+    position: absolute;
+}
+
+.triagle{
+    border-bottom: 70px solid var(--white);
+    border-left: 70px solid transparent;
+    width: 0;
+}
+
+/* Legends */
+
+#legends{
+    background-color: var(--white);
+}
+
+.legends-container{
+    padding: 0px 130px 0px 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.legends-content h1{
+    font-family: "Bebas Neue";
+    font-size: 70px;
+    font-weight: normal;
+    color: var(--black);
+}
+
+.legends-content p{
+    font-family: "Exo";
+    font-size: 24px;
+    color: var(--black);
+    margin: 0px 180px 50px 0px;
+}
+
+.legends-content a{
+    color: var(--white);
+    text-decoration: none;
+    background-color: var(--red);
+    font-family: "Exo";
+    font-size: 24px;
+    font-weight: 500;
+    padding: 15px 25px;
+}
+
+.legends-content a:hover{
+    background-color: var(--white);
+    color: var(--red);
+    border: solid;
+}
+
+.legends-img{
+    display: flex;
+    width: 567px;
+}
+
+.legends-img img{
+    position: absolute ;
+}
+
+/* Games Mode */
+
+#game-mode{
+    background-color: var(--white);
+}
+
+.mode-container{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 180px 130px;
+}
+
+.mode-container h1{
+    font-family: "Bebas Neue";
+    font-size: 70px;
+    color: var(--black);
+    text-align: center;
+}
+
+.mode-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+    flex-wrap: wrap;
+}
+
+.mode{
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.mode-img{
+    width: 487px;
+    height: 340px;
+}
+
+.mode-content{
+    position: absolute;
+}
+
+.mode-content h1{
+    font-family: "Bebas Neue";
+    font-size: 40px;
+    color: var(--white);
+    margin-top: 60px;
+}
+
+.mode-content p{
+    font-family: "Exo";
+    font-size: 16px;
+    color: var(--white);
+    padding: 5px 42px;
+    margin-bottom: 40px;
+}
+
+.mode-content a{
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Exo";
+    font-weight: 500;
+    padding: 15px 25px;
+    color: var(--white);
+    background-color: var(--red);
+}
+
+.mode-content a:hover{
+    background-color: var(--white);
+    color: var(--red);
+    border: solid;
+}
+
+/* Footer */
+
+#footer{
+    background-color: var(--black);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 104px;
+    align-items: center;
+}
+
+.footer-mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.footer-mid h1{
+    font-family: "Exo";
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 20px
+}
+
+.medsos a{
+    width: 50px;
+    height: 50px;
+}
+
+.medsos>:not(:first-child){
+    margin-left: 18px;
+}
+
+.footer-mid p{
+    font-family: "Exo";
+    font-size: 16px;
+    color: var(--white);
+    margin-top: 90px;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right a{
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Bebas Neue";
+    color: var(--white);
+    text-align: end;
+    margin-bottom: 15px
+}
+
+.footer-right a:hover{
+    color: var(--red);
+}
+
+@media screen and (max-width: 768px) {
+    
+    .nav-container{
+        padding: 12px 40px 8px 40px;
+    }
+
+    .nav-logo{
+        margin-right: 30px;
+    }
+
+    .nav-menu >*:not(:first-child){
+        margin-left: 30px;
+    }
+
+    /* Header */
+    
+    .header-container p{
+        margin: 0px 120px;
+    }
+    
+    .header-logo{
+        width: 300px;
+        height: 130px;
+        margin-top: 40px;
+    }
+
+    .header-legends{
+        width: 100%;
+    }
+
+    /* Overview */
+    
+    .overview-card{
+        justify-content: center;
+    }
+    
+    .card{
+        margin-bottom: 60px;
+    }
+
+    /* Legends */
+    
+    .legends-container{
+        padding: 0px 80px;
+        flex-direction: column;
+    }
+    
+    
+    .legends-content p{
+        margin: 0px 100px 50px 0px;
+    }
+    
+    /* Games Mode */
+    
+    .mode-container{
+        padding: 80px 0px 100px;
+    }
+    
+    .mode-card{
+        justify-content: center;
+    }
+    
+    .mode{
+        margin-bottom: 80px;
+    }
+    
+    /* Footer */
+
+    .footer-right{
+        display: none;
+    }
+    
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 0px 30px 0px;
+    }
+    
+    .footer-mid{
+        margin: 40px 0px 0px 0px;
+        
+    }
+    
+    .medsos a{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .footer-mid p{
+        margin-top: 40px;
+    }
+    
+}
+
+/* Mobile */
+
+@media screen and (max-width: 425px){
+
+    .nav-container{
+        padding: 12px 12px 8px 12px;
+    }
+
+    .nav-logo{
+        margin-right: 15px;
+        
+    }
+
+    .nav-logo img{
+        width: 100px;
+    }
+
+    .nav-menu a , .nav-sign a{
+        font-size: 20px;
+        
+    }
+
+    .nav-menu >*:not(:first-child){
+        margin-left: 15px;
+    }
+
+    /* Header */
+
+    .header-container p{
+        margin: 0px 60px;
+    }
+    
+    .header-logo{
+        width: 250px;
+        height: 100px;
+    }
+
+    /* Overview */
+
+    .overview-title{
+        padding-top: 20px;
+        justify-content: center;
+    }
+    
+    .overview-title h1{
+        font-size:70px;
+       
+    }
+    
+    .trapesium, .trapesium-left{
+        display: none;
+    }
+    
+    /* Legends */
+
+    .legends-container{
+        padding: 0px 20px;
+    }
+    
+    
+    .legends-content p{
+        margin: 0px 0px 50px 0px;
+    }
+
+    .legends-content a{
+        margin: 50px;
+    }
+
+    .legends-container img{
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    /* Games Mode */
+
+    .mode-container{
+        padding: 80px 0px 0px;
+    }
+    
+    .mode img{
+        width: 360px;
+        height: 290px;
+    }
+
+    .mode-content h1{
+        margin-top: 0px;
+    }
+
+    /* Footer */
+
+    .footer-mid p{
+        margin-top: 40px;
+        font-size: 14px;
+    }
+}
